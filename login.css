@@ -1,0 +1,177 @@
+body{
+    background-color: white;
+    background-image: url("2.jpg");
+    
+    height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.left {
+    /* border: 2px solid orangered; */
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 18px;
+
+}
+
+.left img{
+    width: 90px;
+   
+}
+
+.left div{
+    text-align: center;
+    font-size: 16px;
+    line-height: 0px;
+    
+}
+
+.mid{
+    /* border: 2px solid rosybrown; */
+    display: block;
+    width: 60%;
+    margin: 19px auto;
+}
+
+.right {
+    /* border: 2px solid blue; *   position: absolute;*/
+    position: absolute;
+    right: 5px;
+    top: 18px;
+   
+}
+
+.navbar{
+    display: inline-block;
+}
+
+.navbar li{
+    display: inline-block;
+    font-size: 24px;
+    padding: auto;
+}
+
+.navbar li a{
+    color: rgb(4, 54, 4);
+    text-decoration: none;
+    padding: 19px 25px;
+}
+
+.navbar li a:hover, .navbar li a:active {
+    color: rgb(15, 131, 121);
+    text-decoration: underline;
+    
+}
+
+.btn{
+    font-family: 'Baloo Bhai', cursive;
+    margin: 10px 9px;
+    background-color: rgb(6, 90, 69);
+    color:white;
+    padding: 5px 6px;
+    border-color: rgb(6, 90, 69);
+    border-radius:12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: rgb(15, 131, 121);
+}
+
+.logo{
+    margin-top: 10px;
+    color: rgb(4, 54, 4);
+}
+h1{
+   
+    margin-top: 200px;
+    font-size: 60px;
+    margin-left: 110px;
+    color: rgb(4, 54, 4);
+}
+#container{
+    margin-top: 140px;
+    width: 400px;
+    height: 279px;
+    margin-left: 470px;
+    border: 4px solid rgb(6, 90, 69);
+    background-color: rgb(15, 131, 121);
+}
+.s{
+    margin-left: 51px;
+}
+h3{
+    margin-left: 102px;
+     color: rgb(4, 54, 4);
+    font-size: 28px;
+    
+}
+#con  {
+           
+    width: 57%;
+    border: none;
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+    background-color:rgb(6, 90, 69) ;
+    margin: 20px 2px 11px 35px;
+padding: 10px 31px 9px 20px;
+border-radius: 6px;
+margin-top: 20px;
+cursor: pointer;
+}
+
+#i{
+    color: red;
+    text-align:end;
+    position: relative;
+    top:24px;
+
+}
+#i2{
+    color: red;
+    text-align:end;
+    position: relative;
+    top:73px;
+
+}
+#st{
+    margin-left: 55px;
+}
+
+#footer p{
+    color: white;
+    font-size: 20px;
+
+}
+#footer p a{
+    color: rgb(6, 90, 69);
+    text-decoration: none;
+    font-weight: bold;
+}
+#footer{
+    
+    margin-left: 100px;
+}
+#c2{
+    width: 50%;
+    float: left;
+}
+#bottom{
+    margin-top: 20px;
+}
+
+.a{
+    color: white;
+    text-decoration: none;
+}
+
+.a:hover{
+    color: rgb(15, 131, 121);
+}

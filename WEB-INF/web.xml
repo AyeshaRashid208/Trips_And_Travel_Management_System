@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+
+
+	
+	<servlet>
+		<servlet-name>LogIn</servlet-name>
+		<servlet-class>LogIn</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LogIn</servlet-name>
+		<url-pattern>/LogIn</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>  
+<servlet-name>SignUp</servlet-name>  
+<servlet-class>SignUp</servlet-class>  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>SignUp</servlet-name>  
+<url-pattern>/SignUp</url-pattern>  
+</servlet-mapping>  
+
+<servlet>  
+<servlet-name>InsertRecord</servlet-name>  
+<servlet-class>InsertRecord</servlet-class>  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>InsertRecord</servlet-name>  
+<url-pattern>/InsertRecord</url-pattern>  
+</servlet-mapping> 
+
+ <servlet>  
+<servlet-name>Signuphandler</servlet-name>  
+<servlet-class>Signuphandler</servlet-class>  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>Signuphandler</servlet-name>  
+<url-pattern>/Signuphandler</url-pattern>  
+</servlet-mapping> 
+
+<servlet>  
+<servlet-name>Trips</servlet-name>  
+<servlet-class>Trips</servlet-class>  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>Trips</servlet-name>  
+<url-pattern>/Trips</url-pattern>  
+</servlet-mapping> 
+
+<servlet>  
+<servlet-name>admincheck</servlet-name>  
+<servlet-class>admincheck</servlet-class>  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>admincheck</servlet-name>  
+<url-pattern>/admincheck</url-pattern>  
+</servlet-mapping> 
+
+<servlet>  
+<servlet-name>UpdateRecord</servlet-name>  
+<servlet-class>UpdateRecord</servlet-class>  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>UpdateRecord</servlet-name>  
+<url-pattern>/UpdateRecord</url-pattern>  
+</servlet-mapping> 
+
+<servlet>  
+<servlet-name>DeleteRecord</servlet-name>  
+<servlet-class>DeleteRecord</servlet-class>  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>DeleteRecord</servlet-name>  
+<url-pattern>/DeleteRecord</url-pattern>  
+</servlet-mapping> 
+
+<servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>logout</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+</web-app>
+

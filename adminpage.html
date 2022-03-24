@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="adminpage.css">
+    <script language="JavaScript">
+        function validate() {
+
+            if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.emp.email.value)) {
+                alert("Invalid Email it should be like username@gmail.com")
+                document.emp.email.focus()
+                return false;
+            }
+
+            if (document.emp.password.value == "") {
+                alert("Password field is empty");
+                document.emp.password.focus();
+                return false;
+
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="logo4.png">
+            <div class="logo">Tours Planet</div>
+
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+
+            <ul class="navbar">
+                <li><a href="http://localhost:8080/project/">Home</a></li>
+                <li><a href="http://localhost:8080/project/login.html">LogIn</a></li>
+                <li><a href="http://localhost:8080/project/signup.html">SignUp</a></li>
+                <li><a href="http://localhost:8080/project/trips.html">Trips</a></li>
+                <li><a href="http://localhost:8080/project/services.html">Services</a></li>
+                <li><a href="http://localhost:8080/project/logout.jsp">LogOut</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right box for buttons -->
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div id="container">
+        <h3>Welcome admin</h3>
+        <form action="addtrip.html" method="post">
+            <button class="b" type="submit">ADD TRIP</button>
+        </form>
+        <form action="updatetrip.html" method="post">
+            <button class="b" type="submit">UPDATE TRIP</button>
+        </form>
+        <form action="Deletetrip.html" method="post">
+            <button class="b" type="submit">DELETE TRIP</button>
+        </form>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

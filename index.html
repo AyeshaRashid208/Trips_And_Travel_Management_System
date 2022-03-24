@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Welcome</title>
+        <link rel="stylesheet" href="i.css">
+        <script language="JavaScript">
+            function validate() {
+    
+                if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.emp.email.value)) {
+                alert("Invalid Email it should be like username@gmail.com")
+                document.emp.email.focus()
+                return false;
+            }
+    
+                if (document.emp.password.value == "") {
+                    alert("Password field is empty");
+                    document.emp.password.focus();
+                    return false;
+    
+                }
+                
+            }
+        </script>   
+    </head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="logo4.png" >
+            <div class="logo">Tours Planet</div>
+            
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+            
+            <ul class="navbar">
+                <li><a href="http://localhost:8080/project/">Home</a></li>
+                <li><a href="http://localhost:8080/project/login.html">LogIn</a></li>
+                <li><a href="http://localhost:8080/project/signup.html">SignUp</a></li>
+                <li><a href="http://localhost:8080/project/trips.html">Trips</a></li>
+                <li><a href="http://localhost:8080/project/services.html">Services</a></li>
+                <li><a href="http://localhost:8080/project/logout.jsp">LogOut</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right box for buttons -->
+            <button class="btn"><a href="tel:+9230244410" class="a" >Call Us</a> </button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div id="c2">
+        <h1>WELCOME TO TOURS PLANET</h1>
+    </div>
+        
+   
+
+    <div id="container">
+
+        <form name="emp" action="admincheck" onsubmit="return validate()" method="post">
+            <div id="st">
+            <table>
+                
+                <tr>
+                    <h3>LogIn</h3>
+                </tr>
+                <tr>
+                    <td align="center">Email </td>
+                    <div id="i">
+                        <td><input type="email" name="email" id="email" class="pa"></td>
+                    </div>
+                </tr>
+    
+                <tr>
+    
+                    <td align="center">Password</td>
+                    <div id="i2">
+                        <td><input type="password" name="password" id="pwd" class="pa"></td>
+                    </div>
+                </tr>
+    
+                <tr>
+                    <td align="right"></td>
+                    <td><input type="submit" value="Login" id="con" class="s" name="sub"></td>
+                </tr>
+                
+    
+            </table>
+        </div>
+        <div id="footer">
+            <p><a href="http://localhost:8080/project/signup.html">Sign up </a>for a new account</p>
+        </div>
+        </form>
+    </div>
+    
+	
+    
+</body>
+
+</html>

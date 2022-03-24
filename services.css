@@ -1,0 +1,100 @@
+body{
+    background-color: white;
+    background-image: url("2.jpg");
+    
+    height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.left {
+    /* border: 2px solid orangered; */
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 18px;
+
+}
+
+.left img{
+    width: 90px;
+   
+}
+
+.left div{
+    text-align: center;
+    font-size: 16px;
+    line-height: 0px;
+    
+}
+
+.mid{
+    /* border: 2px solid rosybrown; */
+    display: block;
+    width: 60%;
+    margin: 19px auto;
+}
+
+.right {
+    /* border: 2px solid blue; *   position: absolute;*/
+    position: absolute;
+    right: 5px;
+    top: 18px;
+   
+}
+
+.navbar{
+    display: inline-block;
+}
+
+.navbar li{
+    display: inline-block;
+    font-size: 24px;
+    padding: auto;
+}
+
+.navbar li a{
+    color: rgb(4, 54, 4);
+    text-decoration: none;
+    padding: 19px 25px;
+}
+
+.navbar li a:hover, .navbar li a:active {
+    color: rgb(15, 131, 121);
+    text-decoration: underline;
+    
+}
+
+.btn{
+    font-family: 'Baloo Bhai', cursive;
+    margin: 10px 9px;
+    background-color: rgb(6, 90, 69);
+    color:white;
+    padding: 5px 6px;
+    border-color: rgb(6, 90, 69);
+    border-radius:12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: rgb(15, 131, 121);
+}
+
+.logo{
+    margin-top: 10px;
+    color: rgb(4, 54, 4);
+}
+h1{
+    margin-top: 50px;
+    font-size: 60px;
+    margin-left:445px;
+    color: rgb(1, 22, 1);
+}
+.ourServices{
+    color: rgb(4, 54, 4);
+    font-size: 22px;
+}

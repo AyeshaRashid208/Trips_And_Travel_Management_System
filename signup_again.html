@@ -1,0 +1,158 @@
+<html>
+
+<head>
+    <title>SIGNUP</title>
+    <link rel="stylesheet" href="signup2.css">
+    <script language="JavaScript">
+        function validate() {
+
+            if (document.emp.name.value == "") {
+                alert("Name Field Empty!!")
+
+                document.emp.name.focus();
+                return false;
+            }
+
+            if (document.emp.password.value == "") {
+                alert("Password field is empty");
+                document.emp.password.focus();
+                return false;
+
+            }
+            if (document.emp.confirm_password.value == "") {
+                alert("Confirm Password field is empty");
+                document.emp.confirm_password.focus();
+                return false;
+            }
+            if (document.emp.password.value != document.emp.confirm_password.value) {
+                alert("Password and Confirm password does not match");
+                document.emp.confirm_password.focus();
+                return false;
+            }
+
+            if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.emp.email.value)) {
+                alert("Invalid Email it should be like username@gmail.com")
+                document.emp.email.focus()
+                return false;
+            }
+            if (!document.emp.gender[0].checked && !document.emp.gender[1].checked) {
+                alert("Please choose gender");
+                return false;
+            }
+            if (document.emp.country.value == "") {
+                alert("Choose Country!!");
+                return false;
+            }
+            if (document.emp.phone.value == "") {
+                alert("Telephone is empty!!");
+                return false;
+            }
+            
+        }
+
+        function letternumber(event) {
+            var keychar;
+
+            keychar = event.key;
+            //alert(event.key)	
+
+            // alphas and numbers
+            if (((".+-0123456789").indexOf(keychar) > -1))
+                return true;
+            else
+                return false;
+        }
+    </script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="logo4.png" >
+            <div class="logo">Tours Planet</div>
+            
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+            
+            <ul class="navbar">
+                <li><a href="http://localhost:8080/project/">Home</a></li>
+                <li><a href="http://localhost:8080/project/login.html">LogIn</a></li>
+                <li><a href="http://localhost:8080/project/signup.html">SignUp</a></li>
+                <li><a href="http://localhost:8080/project/trips.html">Trips</a></li>
+                <li><a href="http://localhost:8080/project/services.html">Services</a></li>
+                <li><a href="http://localhost:8080/project/logout.jsp">LogOut</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right box for buttons -->
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    
+    <div id="container">
+        <form name="emp" action="Signuphandler" method="get" onsubmit="return validate()">
+            <table>
+                <tr>
+                    <h3 align="center">SIGN UP</h3>
+                </tr>
+                <tr>
+                    <td align="right">Name </td>
+                    <div id="i">
+                        <td><input type="text" name="name" id="name" class="n"></td>
+                    </div>
+                </tr>
+                <tr>
+                    <td align="right">Email</td>
+                    <td><input type="email" name="email" id="email" class="e"></td>
+                </tr>
+                <tr>
+
+                    <td align="right">Password</td>
+                    <div id="i2">
+                        <td><input type="password" name="password" id="pwd" class="p"></td>
+                    </div>
+                </tr>
+                <tr>
+                    <td align="right">Confirm password</td>
+                    <td><input type="text" name="confirm_password" id="cpwd" class="cp"></td>
+                </tr>
+                <tr>
+                    <td align="right">Gender:</td>
+                    <td><input type="radio" name="gender" value="male"> Male </td>
+                </tr>
+
+                <tr>
+                    <td align="right"></td>
+                    <td><input type="radio" name="gender" value="female"> Female </td>
+                </tr>
+               
+                <tr>
+                    <td align="right">Telephone:</td>
+                    <td><input type="text" name="phone" onKeyPress="return letternumber(event)"></td>
+                </tr>
+
+                <tr>
+                    <td align="right"></td>
+                    <td><input type="submit" value="Signup" id="con" class="s" name="sub"></td>
+                </tr>
+
+                <tr>
+                    <td align="center" style = "color:rgb(3, 44, 34)" id = "error">*Email already exist</td>
+                </tr>
+
+             
+
+            </table>
+            <div id="footer">
+                <p><a href="http://localhost:8080/project/login.html">LogIn  </a>for Existing account</p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

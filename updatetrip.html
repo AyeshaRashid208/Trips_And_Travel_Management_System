@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <title>Trip details</title>
+    <link rel="stylesheet" href="trips.css">
+    <script language="JavaScript">
+        function validate() {
+
+            if (document.trip.Departure_Date.value == "") {
+                alert("Departure Date Field Empty!!")
+
+                document.trip.Departure_Date.focus();
+                return false;
+            }
+            if (document.trip.Departure_Time.value == "") {
+                alert("Departure Time Field Empty!!")
+
+                document.trip.Departure_Time.focus();
+                return false;
+            }
+            if (document.trip.Departure_From.value == "") {
+                alert("Departure From Field Empty!!")
+
+                document.trip.Departure_From.focus();
+                return false;
+            }
+            if (document.trip.No_of_Days.value == "") {
+                alert("Number of days Field Empty!!")
+
+                document.trip.No_of_Days.focus();
+                return false;
+            }
+            if (document.trip.No_of_Seats.value == "") {
+                alert("Number of Seats Field Empty!!")
+
+                document.trip.No_of_Seats.focus();
+                return false;
+            }
+            if (document.trip.Price_Per_Seat.value == "") {
+                alert("Price Per Seat Field Empty!!")
+
+                document.trip.Price_Per_Seat.focus();
+                return false;
+            }
+           
+
+            
+            
+        }
+
+        
+    </script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="logo4.png" >
+            <div class="logo">Tours Planet</div>
+            
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+            
+            <ul class="navbar">
+                <li><a href="http://localhost:8080/project/">Home</a></li>
+                <li><a href="http://localhost:8080/project/login.html">LogIn</a></li>
+                <li><a href="http://localhost:8080/project/signup.html">SignUp</a></li>
+                <li><a href="http://localhost:8080/project/trips.html">Trips</a></li>
+                <li><a href="http://localhost:8080/project/services.html">Services</a></li>
+                <li><a href="http://localhost:8080/project/logout.jsp">LogOut</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right box for buttons -->
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    
+    
+    <div id="container">
+     
+        <form name="trip" action="UpdateRecord" method="post" onsubmit="return validate()">
+            <table>
+                <tr>
+                    <h3 align="center">TRIP DETAILS</h3>
+                </tr>
+                <tr>
+                    <td align="right">Departure Date </td>
+                   
+                        <td><input type="Date" name="Departure_Date"></td>
+                  
+                </tr>
+                <tr>
+                    <td align="right">Departure Time</td>
+                    <td><input type="time" name="Departure_Time" ></td>
+                </tr>
+                <tr>
+
+                    <td align="right">Departure From</td>
+                    <div id="i2">
+                        <td><input type="text" name="Departure_From" ></td>
+                    </div>
+                </tr>
+                <tr>
+                    <td align="right">No of Days</td>
+                    <td><input type="textd" name="No_of_Days" ></td>
+                </tr>
+                <tr>
+                    <td align="right">No of Seats</td>
+                    <td><input type="int" name="No_of_Seats" ></td>
+                </tr>
+
+                
+                
+                <tr>
+                    <td align="right">Price Per Seat</td>
+                    <td><input type="text" name="Price_Per_Seat" ></td>
+                </tr>
+
+                <tr>
+                    <td align="right"></td>
+                    <td><input type="submit" value="Submit" id="con" class="s" name="sub"></td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
